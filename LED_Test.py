@@ -56,7 +56,10 @@ if __name__ == "__main__":
     elif led_type == "LED_B":
         box = wait_for_image(LED_B_IMG,3,10)
     
+
+
     if box != None:
         print("PASS")
+        automatic.MouseClick(box.left,box.top)
     else:
         print("NG")

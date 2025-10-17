@@ -1,7 +1,7 @@
 #/bin/bash
 export DISPLAY=:0
-python3.13 ~/python-test/ShowMSG.py &
+pkill -9 -f "$1"
 
-sleep(5)
-python3.13 ~/python-test/Initialize.py
+python3.13 ~/python-test/ShowMSG.py &
+python3.13 "$2" "$3" "$4" "$5" "$6" "$7"
 #/usr/local/bin/python3.13 ~/python-test/Handshke.py
